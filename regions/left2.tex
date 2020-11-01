@@ -15,7 +15,7 @@
 
 \foreach \y in {22}{
   % Contact =============
-  \node[anchor=west, colorDark, thick] at (1.5, \y ) {\Large \textsc{Contact}}; % INPUT
+  \node[anchor=west, colorDark, thick] at (1.5, \y ) {\Large \textsc{Personal}}; % INPUT
   \draw[colorDark, very thick] (4 ,22) -- (6.5 , \y );
 
   % Date of Birth
@@ -31,18 +31,18 @@
 
   \node[anchor=west, colorDark, thick] at (2.25, \y - 1) {\large 06.11.1986, Bielefeld}; % INPUT
 
-  % Location
+  % E-Mail
   \node[circle,draw,
               text width=.5cm,
               fill=white,
               inner sep=0pt,
               path picture={
                   \node at (path picture bounding box.center){
-                      \includegraphics[width=.5cm]{pictures/location} % INPUT
+                      \includegraphics[width=.5cm]{pictures/mail} % INPUT
                   };
               }] at (1.75, \y - 2) {};
 
-  \node[anchor=west, colorDark, thick] at (2.25, \y - 2) {\large Frankurt am Main}; % INPUT
+  \node[anchor=west, colorDark, thick] at (2.25, \y - 2) {\large \href{mailto:jfk.lorenz@gmail.com}{jfk.lorenz@gmail.com}}; % INPUT
 
   % Phone
   \node[circle,draw,
@@ -57,19 +57,6 @@
 
   \node[anchor=west, colorDark, thick] at (2.25, \y - 3) {\large +49 / 0170 180 7175}; % INPUT
 
-  % E-Mail
-  \node[circle,draw,
-              text width=.5cm,
-              fill=white,
-              inner sep=0pt,
-              path picture={
-                  \node at (path picture bounding box.center){
-                      \includegraphics[width=.5cm]{pictures/mail} % INPUT
-                  };
-              }] at (1.75, \y - 4) {};
-
-  \node[anchor=west, colorDark, thick] at (2.25, \y - 4) {\large \href{mailto:jfk.lorenz@gmail.com}{jfk.lorenz@gmail.com}}; % INPUT
-
   % GitHub
   \node[circle,draw,
               text width=.5cm,
@@ -79,16 +66,14 @@
                   \node at (path picture bounding box.center){
                       \includegraphics[width=.5cm]{pictures/git} % INPUT
                   };
-              }] at (1.75, \y - 5) {};
+              }] at (1.75, \y - 4) {};
 
-  \node[anchor=west, colorDark, thick] at (2.25, \y - 5) {\large \href{https://github.com/jfklorenz/}{GitHub: jfklorenz}}; % INPUT
+  \node[anchor=west, colorDark, thick] at (2.25, \y - 4) {\large \href{https://github.com/jfklorenz/}{GitHub: jfklorenz}}; % INPUT
 }
 
-\foreach \y in {17}{
-  % Languages =============
-  \node[anchor=west, colorDark, thick] at (1.5, \y) {\Large \textsc{Languages}}; % INPUT
-  \draw[colorDark, very thick] (4.5, 15.5) -- (6.5, \y);
 
+\foreach \y in {18}{
+  % Languages =============
   % German
   \node[circle,draw,
               text width=.5cm,
@@ -98,8 +83,8 @@
                   \node at (path picture bounding box.center){
                       \includegraphics[width=.5cm]{pictures/ger} % INPUT
                   };
-              }] at (1.75, \y) {};
-  \node[anchor=west, colorDark, thick] at (2.25, \y) {\large Native speaker}; % INPUT
+              }] at (1.75, \y - 1) {};
+  \node[anchor=west, colorDark, thick] at (2.25, \y - 1) {\large Native speaker}; % INPUT
 
 
   % English
@@ -111,13 +96,12 @@
                   \node at (path picture bounding box.center){
                       \includegraphics[width=.5cm]{pictures/eng} % INPUT
                   };
-              }] at (1.75, \y - 1) {};
+              }] at (1.75, \y - 2) {};
 
-  \node[anchor=west, colorDark, thick] at (2.25, \y - .75) {\large Fluent}; % INPUT
-  \node[anchor=west, colorDark, thick] at (2.25, \y - 1.25) {(Camebridge Certificate)}; % INPUT
+  \node[anchor=west, colorDark, thick] at (2.25, \y - 1.75) {\large Fluent}; % INPUT
+  \node[anchor=west, colorDark, thick] at (2.25, \y - 2.25) {(Camebridge Certificate)}; % INPUT
 
-
-
+}
 
 \foreach \y in {11}{
   % Skills =============
